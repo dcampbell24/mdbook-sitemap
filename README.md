@@ -18,6 +18,12 @@ file when `mdbook build` is run. It reads the book structure from stdin
 cargo install mdbook-sitemap
 ```
 
+OR
+
+```bash
+cargo binstall mdbook-sitemap
+```
+
 2. Add config to your `Book.toml`
 
 ```toml
@@ -30,6 +36,13 @@ base-url = "https://example.com/docs/"
 # priority = 0.7                  # 0.0 - 1.0
 # output-filename = "sitemap.xml" # output filename
 # include-draft = false           # whether to include draft chapters
+```
+
+# Install in Github Actions
+
+```
+- name: Install mdbook plugin
+  run: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/sonneko/mdbook-sitemap/releases/latest/download/mdbook-sitemap-installer.sh | sh
 ```
 
 # Licence
