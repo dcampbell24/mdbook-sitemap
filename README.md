@@ -10,7 +10,7 @@ This tool is an mdBook backend that automatically generates a sitemap.xml
 file when `mdbook build` is run. It reads the book structure from stdin
 (as JSON provided by mdbook) and writes sitemap.xml to the output directory.
 
-# Usage
+## Usage
 
 1. Install `mdbook-sitemap`
 
@@ -38,13 +38,13 @@ base-url = "https://example.com/docs/"
 # include-draft = false           # whether to include draft chapters
 ```
 
-# Install in Github Actions
+## Install in Github Actions
 
 ```
 - name: Install mdbook plugin
   run: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/sonneko/mdbook-sitemap/releases/latest/download/mdbook-sitemap-installer.sh | sh
 ```
 
-# Licence
+## Licence
 
 MIT license
