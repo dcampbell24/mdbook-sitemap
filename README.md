@@ -38,13 +38,6 @@ base-url = "https://example.com/docs/"
 # include-draft = false           # whether to include draft chapters
 ```
 
-### Install in Github Actions
-
-```
-- name: Install mdbook plugin
-  run: curl --proto '=https' --tlsv1.2 -LsSf https://github.com/sonneko/mdbook-sitemap/releases/latest/download/mdbook-sitemap-installer.sh | sh
-```
-
 ### Licence
 
 MIT license
